@@ -12,5 +12,3 @@ outputs:
 runs:
   using: "docker"
   main: "Dockerfile"
-  args:
-  - ${{ inputs.my-input }}
