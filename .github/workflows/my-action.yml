@@ -29,6 +29,9 @@ jobs:
         with:
           my-input: "Custom message from JS"
 
+      - name: Debug File Structure
+        run: ls -R .github/actions/my-docker-action
+
       - name: Run Docker action
         uses: ./.github/actions/my-docker-action
         with:
