@@ -10,5 +10,5 @@ outputs:
   my-output:
     description: "My sample output"
 runs:
-  using: "node18"
+  using: "node20"
   main: "index.js"
