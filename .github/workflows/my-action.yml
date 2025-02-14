@@ -8,6 +8,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Debug File Structure
+        run: ls -R .github/actions/my-docker-action
+
       - name: install node
         uses: actions/setup-node@v4
         with:
