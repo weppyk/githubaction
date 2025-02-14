@@ -33,6 +33,6 @@ jobs:
         run: ls -R .github/actions/my-docker-action
 
       - name: Run Docker action
-        uses: ./.github/actions/my-docker-action
+        uses: .github/actions/my-docker-action
         with:
           my-input: "Custom message from docker"
