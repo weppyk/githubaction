@@ -1,0 +1,16 @@
+name: "My Composite Action"
+description: "This is my custom action"
+author: "Radek Drlik"
+inputs:
+  my-input:
+    description: "My sample input"
+    required: false
+    default: "Hello World from composite"
+outputs:
+  my-output:
+    description: "My sample output"
+runs:
+  using: "composite"
+  steps:
+    - run: echo "Hello World from composite"
+      shell: bash

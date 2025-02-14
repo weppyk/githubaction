@@ -1,0 +1,24 @@
+name: Run My Custom Action
+on: push
+
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run composite action
+        uses: ./.github/actions/my-composite-action
+        with:
+          my-input: "Custom message from composite"
+
+      - name: Run JS action
+        uses: ./.github/actions/my-js-action
+        with:
+          my-input: "Custom message from JS"
+
+      - name: Run Docker action
+        uses: ./.github/actions/my-docker-action
+        with:
+          my-input: "Custom message from docker"

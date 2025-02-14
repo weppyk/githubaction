@@ -1,0 +1,14 @@
+name: "My JS Custom Action"
+description: "This is my custom action"
+author: "Radek Drlik"
+inputs:
+  my-input:
+    description: "My sample input"
+    required: false
+    default: "Hello World from javascript"
+outputs:
+  my-output:
+    description: "My sample output"
+runs:
+  using: "node20"
+  main: "index.js"
